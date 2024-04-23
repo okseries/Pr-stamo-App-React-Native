@@ -25,7 +25,7 @@ export const BottomTapNavigator = () => {
   }} 
   screenOptions={{
    tabBarShowLabel: false,
-   
+   headerShown: false,  
     
     tabBarItemStyle: {
       //borderRadius: 20, // Hace que las pestañas/tab sean redondeadas

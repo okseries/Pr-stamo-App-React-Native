@@ -11,7 +11,7 @@ const App = () => {
   return (
     <NavigationContainer>
     <SafeAreaProvider>
-      <DrawerNavigatorMenu/>
+      <BottomTapNavigator/>
     </SafeAreaProvider>
     </NavigationContainer>
   );

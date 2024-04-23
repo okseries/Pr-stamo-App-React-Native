@@ -16,10 +16,8 @@ const Stack = createStackNavigator<RootStackParams>();
 export const StackNavigatorUsuario = () => {
   return (
     <>
-      <ButtonDrawer />
       <Stack.Navigator
         screenOptions={{
-          headerShown: false,
           headerStyle: {
             elevation: 0,
             shadowColor: 'transparent',

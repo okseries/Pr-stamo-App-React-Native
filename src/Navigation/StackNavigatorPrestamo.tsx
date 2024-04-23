@@ -20,10 +20,8 @@ export const StackNavigatorPrestamo = () => {
 
   return (
     <>
-      <ButtonDrawer />
       <Stack.Navigator
         screenOptions={{
-          headerShown: false,
           headerStyle: {
             elevation: 0,
             shadowColor: 'transparent',
