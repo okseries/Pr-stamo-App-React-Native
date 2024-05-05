@@ -3,11 +3,11 @@ import {ClienteForm} from '../Screens/Client/ClienteForm';
 import {ClienteScreen} from '../Screens/Client/ClienteScreen';
 import {ButtonDrawer} from '../Components/ButtonDrawer';
 import { ClienteDetailScreen } from '../Screens/Client/ClienteDetailScreen';
-import { Cliente } from '../../Data_Prueba/Clientes';
+import { Cliente } from '../../Data_Prueba/ClientesData';
 
 export type RootStackParams = {
   Clientes: undefined;
-  NuevoCliente: undefined;
+  ClienteForm: undefined;
   ClienteDetailScreen: { cliente: Cliente };
 };
 
@@ -25,7 +25,7 @@ export const StackNavigatorCliente = () => {
           },
         }}>
         <Stack.Screen name="Clientes" component={ClienteScreen} />
-        <Stack.Screen name="NuevoCliente" component={ClienteForm} />
+        <Stack.Screen name="ClienteForm" component={ClienteForm} />
         <Stack.Screen name="ClienteDetailScreen" component={ClienteDetailScreen} />
       </Stack.Navigator>
     </>

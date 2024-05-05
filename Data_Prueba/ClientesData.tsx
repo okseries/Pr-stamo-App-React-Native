@@ -20,7 +20,7 @@ export interface Cliente {
 
 
 
-export const Clientes: Cliente[] = [
+export const ClientesData: Cliente[] = [
     {
       "idCliente": 7,
       "identificacion": "074-0005249-9",

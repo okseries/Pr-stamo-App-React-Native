@@ -4,6 +4,7 @@ import {PrestamoScreen} from '../Screens/Prestamo/PrestamoScreen';
 import {Products} from '../Screens/Products';
 import {MorasScreen} from '../Mora/MorasScreen';
 import {ButtonDrawer} from '../Components/ButtonDrawer';
+import { NotificationButtom } from '../Components/NotificationButtom';
 
 export type RootStackParams = {
   Moras: undefined;
@@ -20,6 +21,7 @@ export const StackNavigatorMora = () => {
             elevation: 0,
             shadowColor: 'transparent',
           },
+          headerRight: () => <NotificationButtom />
         }}>
         <Stack.Screen name="Moras" component={MorasScreen} />
       </Stack.Navigator>

@@ -1,12 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
-import {ClienteScreen} from '../Screens/Client/ClienteScreen';
 import {PrestamoScreen} from '../Screens/Prestamo/PrestamoScreen';
-import {Products} from '../Screens/Products';
 import {PrestamoForm} from '../Screens/Prestamo/PrestamoForm';
-import {DrawerActions, useNavigation} from '@react-navigation/native';
-import {useEffect} from 'react';
-import {Pressable, Text} from 'react-native';
-import {ButtonDrawer} from '../Components/ButtonDrawer';
+import {useNavigation} from '@react-navigation/native';
 
 export type RootStackParams = {
   Prestamos: undefined;
@@ -23,7 +18,7 @@ export const StackNavigatorPrestamo = () => {
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
-            elevation: 0,
+             elevation: 0,
             shadowColor: 'transparent',
           },
         }}>

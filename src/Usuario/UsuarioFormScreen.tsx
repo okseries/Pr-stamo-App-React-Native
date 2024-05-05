@@ -51,7 +51,7 @@ export const UsuarioFormScreen = () => {
               label="Identificacion"
               keyboardType="numeric"
             />
-            <View style={globalStyle.row}>
+            <View >
               <TextinputComponent
                 value={formState['Primer Nombre']}
                 onChangeText={onInputChange}
@@ -64,7 +64,7 @@ export const UsuarioFormScreen = () => {
                 label="Segundo Nombre"
               />
             </View>
-            <View style={globalStyle.row}>
+            <View >
               <TextinputComponent
                 value={formState['Apellido Paterno']}
                 onChangeText={onInputChange}
@@ -76,7 +76,7 @@ export const UsuarioFormScreen = () => {
                 label="Apellido Materno"
               />
             </View>
-            <View style={globalStyle.row}>
+            <View >
               <TextinputComponent
                 value={formState['Telefono']}
                 onChangeText={onInputChange}
@@ -90,7 +90,7 @@ export const UsuarioFormScreen = () => {
                 keyboardType="email-address"
               />
             </View>
-            <View style={globalStyle.row}>
+            <View >
               <TextinputComponent
                 value={formState['Ingresos']}
                 onChangeText={onInputChange}

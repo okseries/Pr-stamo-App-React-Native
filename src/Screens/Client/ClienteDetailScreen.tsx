@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import {RouteProp, useRoute} from '@react-navigation/native';
+import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {RootStackParams} from '../../Navigation/StackNavigatorCliente';
-import {globalStyle} from '../../Theme/Theme';
+import {globalCOlors, globalStyle} from '../../Theme/Theme';
 import {getInitials} from '../../Utility/getInitial';
 import getRandomColor from '../../Components/Random Color/getRandomColor';
 import Avatar from '../../Components/Avatars/AvatarPrimary';
@@ -15,6 +15,7 @@ type ClienteDetailScreenRouteProp = RouteProp<
 >;
 
 export const ClienteDetailScreen = () => {
+  const navigation = useNavigation();
   const route = useRoute<ClienteDetailScreenRouteProp>(); // Especifica el tipo de la ruta
   const {params} = route;
 
@@ -38,6 +39,7 @@ export const ClienteDetailScreen = () => {
             </View>
           </View>
           <Text style={{fontSize: 16}}>{cliente.identificacion}</Text>
+          <Text  style={{fontSize:16, color: 'blue'}} onPress={()=> navigation.navigate('ClienteForm' as never)} >Editar cliente</Text>
         </View>
 
         <View style={styles.body}>
@@ -100,7 +102,7 @@ export const ClienteDetailScreen = () => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#fff',
-    padding: 10,
+    paddingVertical: 50,
     borderRadius: 8,
     marginBottom: 10,
     shadowColor: '#000',
@@ -148,6 +150,8 @@ const styles = StyleSheet.create({
 
   iconContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'center',
+    marginBottom: 25,
+
   },
 });
